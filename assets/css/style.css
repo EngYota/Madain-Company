@@ -11,15 +11,23 @@
 ------------------------------------*/
 @font-face {
     font-family: 'Font1';
-    src: url('../fonts/Lucky\ Beauty.otf');
+    src: url('../fonts/Montserrat-Bold.ttf');
     font-weight: 700;
+  }
+  @font-face {
+    font-family: 'Font2';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
   }
   a{
     text-decoration: none !important;
     font-family: 'Font1';
   }
-  h1,h2,h3,h4,h5,h6,p,a{
+  h1,h2,h3,h4,h5,h6{
     font-family: 'Font1';
+  }
+  p,a{
+    font-family: 'Font2';
   }
   
 /* PreLoad
@@ -983,44 +991,7 @@ html {
     z-index: 5;
     display: none;
   }
-  /* Header Fixed */
-#header.style-absolute.is-fixed,
-.header.is-fixed {
-  position: fixed;
-  top: -80px;
-  left: 0;
-  width: 100%;
-  box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.05);
-  z-index: 9999;
-  background: #fff;
-  border: none;
-  opacity: 1;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
 
-#header.style-absolute.is-fixed {
-  background: #fafafa;
-}
-#header.style-absolute.is-fixed .main-menu .navigation > li > a{
-  color: #262626;
-}
-#header.style-absolute.is-fixed .main-menu .navigation > li:hover > a,
- #header.style-absolute.is-fixed .main-menu .navigation > li.current > a {
-  opacity: 1;
-  color: #a16905;
-}
-.header.is-fixed.is-small,
-#header.style-absolute.is-small {
-  top: 0;
-  -webkit-animation-name: fadeInDown;
-  -webkit-animation-duration: 0.8s;
-  animation-name: fadeInDown;
-  animation-duration: 0.8s;
-}
   /*** 
 
 ====================================================================
@@ -1458,12 +1429,12 @@ footer{
 }
 footer.dark-footer{
 	background:#fff;
-  padding: 0 50px;
+  padding: 0 10px;
 }
 
 footer .footer-add i{
-    padding-right: 10px;
-    color: #a16905;
+    padding-left: 10px;
+    color: #252525;
 }
 .ft-itext {
     font-weight: 500;
@@ -1500,11 +1471,19 @@ ul.social li a {
   padding-left: 5px;
   line-height: 13px;
 }
-.footer-links{
-  margin-top: 50px;
-}
 footer.skin-light-footer .footer-add {
     color:#243751;
+}
+footer.skin-dark-footer .col-xs-12{
+  padding:0 5px;
+}
+footer.skin-dark-footer .last-col{
+  padding: 0;
+}
+footer.skin-dark-footer .last-col .footer-widget h2{font-size: 15px;}
+footer.skin-dark-footer .footer-widget h2 img{
+  width: 115px;
+  height: 33px;
 }
 .ft-copyright {
     border-top: 1px solid #eaeef3;
@@ -1517,7 +1496,7 @@ footer.skin-light-footer .footer-add {
     max-width: 110px;
 }
 .footer-widget {
-    padding:70px 0px;
+    padding:70px 0px 30px;
 }
 h4.widget-title {
     margin-bottom: 20px;
